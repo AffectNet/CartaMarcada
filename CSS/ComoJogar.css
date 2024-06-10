@@ -1,0 +1,47 @@
+body{
+    display: flex;
+   }
+   
+   .divEsquerda{
+       width: fit-content;
+   }
+   
+   .divDireita{
+       width: 100%;
+       height: 30rem;
+       margin-left: 3rem;
+   }
+   
+   .logoEsquerda{
+       width: 8rem;
+       margin: 2rem;
+       margin-bottom: 0rem !important;
+   }
+   
+   h1, h2{
+       font-family: 'Calistoga', sans-serif; 
+   }
+   
+
+.buttons_comoJogar{
+    display: flex;
+}
+
+.buttons_comoJogar button{
+    margin: 1rem;
+}
+
+p {
+    margin: 2rem;
+    font-size: larger;
+    font-weight: 500;
+    font-family: "Cambo", serif;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+}

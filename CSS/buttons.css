@@ -1,0 +1,85 @@
+.buttonHome{
+    font-family: 'Calistoga', sans-serif;
+    width: 15rem; 
+    height: 3.5rem; 
+    background: #6A4930; 
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); 
+    border-radius: 10px;
+    border: none;
+    color: #DDD1AC;
+    margin: 0 auto 10px;
+    display: block;
+    cursor: pointer;
+    font-size: large;
+}
+
+.buttonHome:hover{
+    background: #302115;
+    color: white; 
+}
+
+.buttonVoltar{
+    font-family: 'Calistoga', sans-serif;
+    width: 9.5rem; 
+    height: 2rem; 
+    background: #005280; 
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); 
+    border-radius: 10px;
+    border: none;
+    color: #DDD1AC;
+    display: block;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.buttonVoltar:hover {
+    background: #00283F;
+    color: #DDD1AC;
+}
+
+.space{
+    height: 3rem;
+    width: 3rem;
+}
+
+a{
+    text-decoration: none;
+}
+a :hover{
+    cursor: pointer;
+}
+
+.Som{
+    font-family: 'Calistoga', sans-serif;
+    width: 9.5rem; 
+    height: 2rem;  
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); 
+    border-radius: 10px;
+    border: none;
+    color: #DDD1AC;
+    display: block;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.SobreAgencias{
+    font-family: 'Calistoga', sans-serif;
+    width: 9.5rem; 
+    height: 2rem;  
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); 
+    border-radius: 10px;
+    border: none;
+    color: #DDD1AC;
+    display: block;
+    margin: 1rem;
+    cursor: pointer;
+    background-color: #005280;
+}
+
+.Mudo{
+    background-color: red;
+}
+
+.Desmudo{
+    background-color: green;
+}

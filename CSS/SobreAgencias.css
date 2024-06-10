@@ -1,0 +1,146 @@
+body {
+    display: flex;
+    overflow: hidden;
+}
+
+.divEsquerda {
+    width: fit-content;
+}
+
+.divDireita {
+    width: 100%;
+    height: 30rem;
+    margin-left: 3rem;
+}
+
+@media (max-width: 1300px) {
+    .divDireita {
+        margin-left: 0rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .flex {
+        display: block !important;
+    }
+
+    body {
+        overflow: auto;
+        background-color: red;
+    }
+}
+
+.logoEsquerda {
+    width: 8rem;
+    margin: 2rem;
+    margin-bottom: 0rem !important;
+}
+
+h1,
+h2 {
+    font-family: 'Calistoga', sans-serif;
+}
+
+.GESTAPO .Titulo {
+    color: #48887A;
+}
+
+.NKVD .Titulo {
+    color: #DF4D4E;
+}
+
+.LOVRA .Titulo {
+    color: #363435;
+}
+
+.Texto {
+    font-size: larger;
+    font-weight: bold;
+    font-family: "Cambo", serif;
+}
+
+.LogosAgencias {
+    height: 20rem;
+}
+
+.Agencia {
+    display: flex;
+}
+
+.Esquerda {
+    width: 40%;
+}
+
+.Texto_volume {
+    font-family: 'Calistoga', sans-serif;
+    width: auto;
+    height: 2rem;
+    border-radius: 10px;
+    border: none;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+input[type="range"] {
+    width: 9.5rem;
+}
+
+.banners {
+    width: 300px;
+    height: 600px;
+    margin-left: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.flex {
+    margin: 0 auto;
+    display: flex;
+}
+
+.NKVD {
+    background-image: url("../imgs/NKVD_banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.NKVD:hover {
+    background-image: url("../imgs/NKVD.png");
+    background-color: #862d2d !important;
+    background-size: 90%;
+    transition: background-image 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+.Lovra {
+    background-image: url("../imgs/Lovra_banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Lovra:hover {
+    background-image: url("../imgs/Lovra.png");
+    background-color: #747072 !important;
+    background-size: 90%;
+    transition: background-image 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+.Gestapo {
+    background-image: url("../imgs/Gestapo_banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Gestapo:hover {
+    background-image: url("../imgs/Gestapo.png");
+    background-color: #2a4e47 !important;
+    background-size: 90%;
+    transition: background-image 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
