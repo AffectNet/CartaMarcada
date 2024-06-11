@@ -7,7 +7,7 @@ document.querySelector('.SobreAgencias').addEventListener('click', function () {
     if (iframe) {
         // Desliga o iframe
         iframeContainer.removeChild(iframe);
-        this.textContent = 'Ligar iFrame';
+        this.textContent = 'Sobre as Agências';
         framejogo.style.display = 'block';
     } else {
         // Liga o iframe

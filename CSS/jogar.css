@@ -211,28 +211,28 @@ h1 {
     z-index: 9999;
 }
 
-.cards_comparsas{
+.cards_comparsas {
     background-color: #b66624;
 }
 
-.cards_infelizes{
+.cards_infelizes {
     background-color: #8a5a01;
 }
 
-.cards_passados{
-    background-color: #005280; 
+.cards_passados {
+    background-color: #005280;
 }
 
-#display{
+#display {
     display: flex;
 }
 
-#contador_de_vidas{
+#contador_de_vidas {
     font-family: 'Calistoga', sans-serif;
-    width: 9rem; 
-    height: 2.5rem; 
-    background: #bebebe; 
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); 
+    width: 9rem;
+    height: 2.5rem;
+    background: #bebebe;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     border: none;
     color: #000000;
@@ -243,12 +243,12 @@ h1 {
     font-weight: bold;
 }
 
-#contador_de_cartas{
+#contador_de_cartas {
     font-family: 'Calistoga', sans-serif;
-    width: 9rem; 
-    height: 2.5rem; 
-    background: #bebebe; 
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); 
+    width: 9rem;
+    height: 2.5rem;
+    background: #bebebe;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     border: none;
     color: #000000;
@@ -259,11 +259,175 @@ h1 {
     font-weight: bold;
 }
 
-#Heart{
+#Heart {
     width: 30px;
     margin-top: 5px;
 }
 
-#texto_cont{
+#texto_cont {
     margin-top: 10px;
 }
+
+.resultado_img {
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.card_resultado {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 20px;
+    height: 165px;
+    display: flex;
+}
+
+.image-container{
+    display: flex;
+    position: relative;
+    width: fit-content; /* Ajusta o contêiner ao tamanho do conteúdo */
+}
+
+.resultado_comparsas {
+    background-color: #b66624;
+}
+
+.resultado_infelizes {
+    background-color: #8a5a01;
+}
+
+.resultado_passados {
+    background-color: #005280;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 5px);;
+    height: 100%;
+    margin-left: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: transparent; /* Cor do texto */
+}
+
+.respostaElement{
+    position: absolute;
+    width: calc(100% - 5px);;
+    height: 20px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #000000cc;
+    margin-top: 145px !important;
+}
+
+.overlay:hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 5px);;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Exemplo de fundo semi-transparente */
+    color: white; /* Cor do texto */
+}
+
+.acerto{
+    color: green !important;
+}
+
+.erro{
+    color: red !important;
+}
+
+.btn_avancar{
+    font-family: 'Calistoga', sans-serif;
+    width: 9.5rem; 
+    height: 2rem;  
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); 
+    border-radius: 10px;
+    border: none;
+    color: #DDD1AC;
+    display: block;
+    margin-top: 5px !important;
+    margin: 0 auto;
+    cursor: pointer;
+    background-color: #005280;
+}
+
+.btn_gabarito{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 5px);;
+    height: 100%;
+    margin-left: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: transparent; /* Cor do texto */
+    background-color: transparent;
+    z-index: 99999;
+    border: none;
+}
+
+.btn_gabarito:hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 5px);;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Exemplo de fundo semi-transparente */
+    color: white; /* Cor do texto */
+    z-index: 99999;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    z-index: 999999;
+  }
+
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #DDD1AC;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 5px solid #6A4930;
+    font-family: 'Calistoga', sans-serif; 
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+  /* The Close Button */
+  .close {
+    color: #6A4930;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
