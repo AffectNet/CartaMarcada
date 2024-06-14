@@ -1,5 +1,3 @@
-import { agencia } from '../JavaScript/jogar';
-
 var audio = document.querySelector(".music-sound");
 var volumeSlider = document.getElementById("volume-slider");
 

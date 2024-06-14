@@ -283,10 +283,11 @@ h1 {
     display: flex;
 }
 
-.image-container{
+.image-container {
     display: flex;
     position: relative;
-    width: fit-content; /* Ajusta o contêiner ao tamanho do conteúdo */
+    width: fit-content;
+    /* Ajusta o contêiner ao tamanho do conteúdo */
 }
 
 .resultado_comparsas {
@@ -301,23 +302,26 @@ h1 {
     background-color: #005280;
 }
 
-.overlay{
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: calc(100% - 5px);;
+    width: calc(100% - 5px);
+    ;
     height: 100%;
     margin-left: 5px;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: transparent; /* Cor do texto */
+    color: transparent;
+    /* Cor do texto */
 }
 
-.respostaElement{
+.respostaElement {
     position: absolute;
-    width: calc(100% - 5px);;
+    width: calc(100% - 5px);
+    ;
     height: 20px;
     margin-left: 5px;
     display: flex;
@@ -329,33 +333,36 @@ h1 {
     margin-top: 145px !important;
 }
 
-.overlay:hover{
+.overlay:hover {
     position: absolute;
     top: 0;
     left: 0;
-    width: calc(100% - 5px);;
+    width: calc(100% - 5px);
+    ;
     height: 100%;
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Exemplo de fundo semi-transparente */
-    color: white; /* Cor do texto */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Exemplo de fundo semi-transparente */
+    color: white;
+    /* Cor do texto */
 }
 
-.acerto{
+.acerto {
     color: green !important;
 }
 
-.erro{
+.erro {
     color: red !important;
 }
 
-.btn_avancar{
+.btn_avancar {
     font-family: 'Calistoga', sans-serif;
-    width: 9.5rem; 
-    height: 2rem;  
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); 
+    width: 9.5rem;
+    height: 2rem;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     border: none;
     color: #DDD1AC;
@@ -366,68 +373,176 @@ h1 {
     background-color: #005280;
 }
 
-.btn_gabarito{
+.btn_gabarito {
     position: absolute;
     top: 0;
     left: 0;
-    width: calc(100% - 5px);;
+    width: calc(100% - 5px);
+    ;
     height: 100%;
     margin-left: 5px;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: transparent; /* Cor do texto */
+    color: transparent;
+    /* Cor do texto */
     background-color: transparent;
     z-index: 99999;
     border: none;
 }
 
-.btn_gabarito:hover{
+.btn_gabarito:hover {
     position: absolute;
     top: 0;
     left: 0;
-    width: calc(100% - 5px);;
+    width: calc(100% - 5px);
+    ;
     height: 100%;
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Exemplo de fundo semi-transparente */
-    color: white; /* Cor do texto */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Exemplo de fundo semi-transparente */
+    color: white;
+    /* Cor do texto */
     z-index: 99999;
 }
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
     z-index: 999999;
-  }
+    overflow: hidden;
+}
 
-  /* Modal Content/Box */
-  .modal-content {
+/* Modal Content/Box */
+.modal-content {
     background-color: #DDD1AC;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto;
+    /* 15% from the top and centered */
     padding: 20px;
     font-weight: bold;
     border-radius: 10px;
     border: 5px solid #6A4930;
-    font-family: 'Calistoga', sans-serif; 
-    width: 80%; /* Could be more or less, depending on screen size */
-  }
+    font-family: 'Calistoga', sans-serif;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
 
-  /* The Close Button */
-  .close {
+/* The Close Button */
+.close {
     color: #6A4930;
     float: right;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
-  }
+}
+
+.alignCenter{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body_pagina_Resultado {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagina_Resultado {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+    position: relative;
+    margin-left: 20px;
+}
+
+.pagina_Resultado p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.pagina_Resultado::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #ffffff transparent transparent;
+}
+
+.body_pagina_Resultado img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    background-color: rgb(255, 226, 203);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+@media (max-width: 805px){
+    .body_pagina_Resultado img {
+        width: 60px !important;
+        height: auto;
+        border-radius: 50%;
+        border: 2px solid #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.btn_home{
+    margin: 10px auto !important;
+    font-family: 'Calistoga', sans-serif !important;
+    width: 9.5rem; 
+    height: 2rem; 
+    font-weight: bold;
+    background: #005280; 
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); 
+    border-radius: 10px;
+    border: none;
+    color: #DDD1AC;
+    display: block;
+    cursor: pointer;
+}
+
+.txt_resultado{
+    font-weight: bold;
+}

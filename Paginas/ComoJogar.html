@@ -7,54 +7,22 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Calistoga&display=swap">
     <link rel="stylesheet" href="../CSS/buttons.css">
     <link rel="stylesheet" href="../CSS/EstiloFundo.css">
-    <link rel="stylesheet" href="../CSS/ComoJogar.css">
+    <link rel="stylesheet" href="../CSS/SobreAgencias.css">
+    <link rel="stylesheet" href="../CSS/frame.css">
+    <script src="../JavaScript/popup.js" type="module" defer></script>
     <link rel="icon" href="../imgs/CartaMarcadaIcon.png" type="image/png">
-    <script src="BancoDeDados.js" defer></script>
     <title>Carta Marcada</title>
 </head>
     <body class="body">
         <div class="divEsquerda">
             <img src="../imgs/LogoCartaMarcada.png" class="logoEsquerda" alt="LogoCartaMarcada">
-            <a href="../index.html"><button class="buttonVoltar">Voltar</button></a>
+            <p><a href="../index.html"><button class="buttonVoltar">Voltar</button></a>
+                <button class="SobreAgencias ComoJogar_home">Sobre as Agências</button>
         </div>
         <div class="divDireita">
-            <h1>Como jogar</h1>
-            <div class="buttons_comoJogar">
-                <a href="#Sozinho"><button class="buttonHome" >SOZINHO</button></a>
-                <a href="#Grupo"><button class="buttonHome" >Grupo</button></a>
-            </div>
-            <div id="Sozinho">
-                <h2>( SOZINHO )</h2>
-                <h2>Saudações!</h2>
-                <p>Você está diante de um jogo de investigação no qual sua sagacidade fará toda diferença! Venha ser desafiado e colocar em risco ou absolver representantes de ideologias dos anos 30.</p>
-                <p>Você será designado aleatóriamente para uma dessas agências:</p>
-                <p>GESTAPO – ideologia nazista</p>
-                <p>NKVD – ideologia comunista</p>
-                <p>L’Ovra - ideologia fascista</p>
-                <p>Você deverá escolher recrutar ou não aquela pessoa para sua Agência.</p>
-                <p>Você poderá escolher as cartas que deseja (há mínimo, e máximo de cartas a escolher).</p>
-                <p>Para cada uma, aponte se deseja ...</p>
-                <p class="bold">RECRUTAR (está na sua agência!)</p>
-                <p class="bold">PASSAR (está fora da sua agência)</p>
-                <p class="bold">Sua agência deve ter no minímo 4 pessoas e no máximo 8</p>
-                <p>A cada acerto, você ganhará 1 medalha, no modo sozinho você precisa de no minímo 5 medalhas para ganhar.</p>
-            </div>
-            <div id="Grupo">
-                <h2>( GRUPO )</h2>
-                <h2>Saudações!</h2>
-                <p>Vocês estão diante de um jogo de investigação no qual sua sagacidade fará toda diferença! Venha ser desafiado e colocar em risco ou absolver representantes de ideologias dos anos 30.</p>
-                <p>Estão todos divididos em agências de investigação.</p>
-                <p>GESTAPO – ideologia nazista</p>
-                <p>NKVD – ideologia comunista</p>
-                <p>L’Ovra - ideologia fascista</p>
-                <p>Vocês deverão entrar em consenso para decidir para qual agência a carta irá, ou se ela será passada.</p>
-                <p class="bold">Sua agência deve ter no minímo 5 pessoas e no máximo 8</p>
-                <p class="bold">Caso sua agência acabar com menos de 5 pessoas, ela automáticamente fracassará.</p>
-                <p class="bold">A cada carta certa em sua agência vocês ganham 100 pontos, a cada erro vocês perdem 200 pontos.</p>
-                <p>Dica : Talvez seja uma boa estratégia infiltrar algumas cartas na agência inimiga...</p>
-                <p>Ganha a agência que tiver mais pontos ao final!</p>
-            </div>
-        <div class="space"></div>
+            <div id="iframeContainer"></div>
+            <iframe scrolling="yes" frameborder="0" id="Frame" src="ComoJogar_frame.html"></iframe>
+        </div>
         <img src="../imgs/LogoAffectGames.png" class="logoAffectGames" alt="LogoAffectGames">
     </body>
 </html>
